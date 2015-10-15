@@ -1,0 +1,151 @@
+body {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.navbar-brand {
+    padding: 8px 8px;
+}
+
+.navbar-brand-img {
+    height: 100%;
+}
+
+.navbar-default {
+    background-color: black;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active {
+    color: gray;
+}
+
+.top-container {
+    margin-top: 80px;
+}
+
+.accordion-header {
+    padding-left: 20px;
+}
+
+.col.bottom-spaced {
+    margin-bottom: 10px;
+}
+
+.col > .message {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0 30px 0 30px;
+}
+
+.panel-default > .panel-heading {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2fa4d2+0,2fa4d2+0,0484bb+100 */
+    background: #2fa4d2; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzJmYTRkMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMmZhNGQyIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzA0ODRiYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(top,  #2fa4d2 0%, #2fa4d2 0%, #0484bb 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2fa4d2), color-stop(0%,#2fa4d2), color-stop(100%,#0484bb)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #2fa4d2 0%,#2fa4d2 0%,#0484bb 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #2fa4d2 0%,#2fa4d2 0%,#0484bb 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #2fa4d2 0%,#2fa4d2 0%,#0484bb 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #2fa4d2 0%,#2fa4d2 0%,#0484bb 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2fa4d2', endColorstr='#0484bb',GradientType=0 ); /* IE6-8 */
+}
+
+.btn-primary.btn-il {
+    float: right;
+    border-radius: 0;
+    background-color: #122b40;
+}
+
+.btn-primary.btn-il:hover {
+    opacity: 0.8;
+}
+
+.panel-title {
+    color: white;
+}
+
+.panel-title > a:hover,a:focus,a:active {
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.panel-group .panel {
+    margin-top: 2px !important;
+    margin-bottom: 0 !important;
+}
+
+.panel-heading i {
+    font-size: 20px;
+}
+
+.panel-body {
+    padding: 5px 15px 5px 15px;
+}
+
+/* http://stackoverflow.com/questions/20547819/vertical-align-with-bootstrap-3 */
+.v-center {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.clickable:hover {
+}
+
+.video-border {
+    outline: 5px solid #122b40;
+    outline-offset: 3px;
+}
+
+.fill-img {
+    background: center center no-repeat;
+    background-size: cover;
+}
+
+/* style.css */
+.mainsolar-footer {
+    display: block;
+    background-color: #122b40;
+    color: #fff;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+    -moz-transition: -moz-transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+    -o-transition: -o-transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+    margin-left: 0px;
+    z-index: 820;
+}
+.mainsolar-footer a {
+    color:#fff;
+}
+
+/* Bootstrap responsive embeds */
+.embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.embed-responsive.embed-responsive-16by9 {
+    padding-bottom: 56.25%;
+}
+
+.embed-responsive-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}

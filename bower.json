@@ -1,0 +1,20 @@
+{
+  "name": "solar3d",
+  "version": "0.0.0",
+  "homepage": "szimmer1.github.io/static_sites/solar3d",
+  "authors": [
+    "Shahar Zimmerman <shahar.zimmerman.usa@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "components-font-awesome": "~4.4.0"
+  }
+}
