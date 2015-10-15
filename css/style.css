@@ -55,6 +55,10 @@
     background-color: #ffcc33;
 }
 
+.dark-citrus-bg {
+    background-color: #cc9900;
+}
+
 .white-color {
     color: #ffffff;
 }
@@ -138,4 +142,20 @@ input[type="text"] {
     text-align: center;
     vertical-align: middle;
     margin-bottom: 10px;
+}
+
+.btn-submit {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.btn-submit:hover {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    vertical-align: middle;
+    background-color: #ffcc33 !important;
+    color: white !important;
 }

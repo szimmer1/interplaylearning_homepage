@@ -29,11 +29,53 @@ $(document).ready(function() {
         touchDrag: true
     });
 
+    /* Form validation */
+
+    function validateEmail(emailStr) {
+        var re = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/i;
+        return re.test(emailStr);
+    }
+
+    function validationHandler(e) {
+        debugger;
+
+        var type = e.target.dataset.validation;
+        var val = e.target.value;
+        var isValid;
+        switch (type) {
+            case 'any':
+                isValid = !!val;
+                break;
+            case 'email':
+                isValid = validateEmail(val);
+                break;
+            default:
+                isValid = false;
+        }
+
+        var css = isValid ? 'validated' : 'not-validated';
+        $(this).addClass(css);
+
+        e.target.dataset.valid = isValid ? true : false;
+
+        var A = $('input[type="text"]');
+        for (var i = 0; i < A.length; i++) {
+            if (A[i].dataset.valid !== 'true') {
+                $('#reachout-submit').prop('disabled', true);
+                return;
+            }
+        }
+        $('#reachout-submit').prop('disabled', false);
+    }
+
+    $('input[type="text"]').on('input', validationHandler);
+
     /* Reach out AJAX */
     $('#reachout-submit').on('click', function(e) {
         e.preventDefault();
 
-        debugger;
+        var $loader = $("<img class=\"big-spaced-row\" width=\"40px;\" src=\"img/loader-larger.gif\" />");
+        var $button = $(this).replaceWith($loader);
 
         var data = {};
         $('#reachout-form').find('input').serializeArray().forEach(function(inputObj) {
@@ -41,7 +83,14 @@ $(document).ready(function() {
         });
 
         $.ajax({
-
+            url: "",
+            method: "POST",
+            error: function(err) {
+                $loader.replaceWith($button);
+            },
+            success: function(data) {
+                $loader.replaceWith("<h2 class=\"white-color big-spaced-row\">We'll get back to you soon!</h2>");
+            }
         })
     })
 
