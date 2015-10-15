@@ -104,6 +104,9 @@
 }
 
 .bg-solar-panel {
+    background-image: url("../img/solar-power1-blacked.jpg");
+    background-position: center;
+    background-size: cover;
     text-align: center;
 }
 
@@ -113,4 +116,26 @@
 
 .footer a {
     color: white;
+}
+
+#reachout-form {
+    margin-top: 100px;
+}
+
+#reachout-submit {
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+input[type="text"] {
+    outline: none;
+    color: #ffffff;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 5%;
+    height: 40px;
+    width: 300px;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 10px;
 }

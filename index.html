@@ -214,18 +214,21 @@
             </div>
             <div class="row small-spaced-row">
                 <div class="col col-md-12 col-xs-12">
-                    <a href=""><img class="img-responsive center-block" style="max-height: 250px" src="img/winners.png" /></a>
+                    <a href=""><img class="img-responsive center-block" style="max-height: 250px; max-width: 300px" src="img/winners.png" /></a>
                 </div>
                 <div class="col col-md-12 col-xs-12 text-center small-spaced-row">
                     <a href="#"><p>Winners of the 2015 Start Up Alley at Solar Power International</p></a>
                 </div>
-                <div class="col col-md-offset-3 col-md-3 col-xs-12">
-                    <a href="#"><img class="img-responsive center-block" style="max-height: 200px" src="img/solar_power_world.png" /></a>
+            </div>
+            <div class="row">
+                <div class="col col-md-offset-2 col-md-4 col-xs-12">
+                    <a href="#"><img class="img-responsive center-block" style="max-height: 200px; max-width: 300px" src="img/solar_power_world.png" /></a>
                 </div>
-                <div class="col col-md-3 col-xs-12">
-                    <a href="#"><img class="img-responsive center-block" style="max-height: 200px" src="img/greentech_media.png" /></a>
+                <div class="col col-md-4 col-xs-12 big-spaced-row">
+                    <a href="#"><img class="img-responsive center-block" style="max-height: 200px; max-width: 300px" src="img/greentech_media.png" /></a>
                 </div>
             </div>
+            <div class="small-spaced-row visible-md visible-lg"></div>
         </div>
     </div>
 
@@ -242,15 +245,15 @@
                 </div>
             </div>
             <div class="row">
-                <div id="reachout-form">
+                <form id="reachout-form">
                     <div class="col col-md-12 col-xs-12">
-                        <input name="fullname" type="text" placeholder="Full Name"/>
+                        <input name="fullname" type="text" placeholder="Full Name" data-validation="any" required/>
                     </div>
                     <div class="col col-md-12 col-xs-12">
-                        <input name="email" type="text" placeholder="Email"/>
+                        <input name="email" type="text" placeholder="Email" data-validation="email" required/>
                     </div>
                     <div class="col col-md-12 col-xs-12">
-                        <button class="btn btn-primary" id="reachout-submit">Submit</button>
+                        <button type="submit" class="btn btn-primary" id="reachout-submit">Submit</button>
                     </div>
                 </div>
             </div>
