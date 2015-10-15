@@ -144,6 +144,35 @@ input[type="text"] {
     margin-bottom: 10px;
 }
 
+.btn-plan {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    vertical-align: middle;
+    color: white;
+}
+
+.btn-plan:hover {
+    color: white;
+    opacity: 0.7;
+}
+
+.purple-bg {
+    background-color: #6b52a2;
+}
+
+.red-bg {
+    background-color: #f05346;
+}
+
+.green-bg {
+    background-color: #79c35a;
+}
+
+.blue-bg {
+    background-color: #0099cd;
+}
+
 .btn-submit {
     width: 100px;
     height: 40px;
@@ -158,4 +187,62 @@ input[type="text"] {
     vertical-align: middle;
     background-color: #ffcc33 !important;
     color: white !important;
+}
+
+.border-top-purple {
+    border-top: 8px solid #6b52a2;
+}
+.border-top-red {
+    border-top: 8px solid #f05346;
+}
+.border-top-green {
+    border-top: 8px solid #79c35a;
+}
+.border-top-blue {
+    border-top: 8px solid #0099cd;
+}
+
+.panel-il {
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    text-align: center;
+}
+
+.panel-il .panel-body {
+    height: 200px;
+}
+
+.panel-il .panel-heading {
+    border-bottom: 1px solid lightgrey;
+}
+
+.panel-il .panel-heading .panel-title {
+    color: #000000;
+    font-size: 24px;
+}
+
+.panel-il .panel-body p {
+    font-size: 18px;
+}
+
+.panel-il .panel-body ul {
+     font-size: 16px;
+     text-align: left;
+     padding: 0 10% 0 20%;
+     list-style: none;
+     margin-left: 0;
+     text-indent: -1em;
+ }
+
+.panel-il .panel-body li .fa {
+    color: #fdc866;
+    padding-right: 5px;
+}
+
+.panel-submit .link {
+    padding-top: 10px;
 }

@@ -37,8 +37,6 @@ $(document).ready(function() {
     }
 
     function validationHandler(e) {
-        debugger;
-
         var type = e.target.dataset.validation;
         var val = e.target.value;
         var isValid;
