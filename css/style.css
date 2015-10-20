@@ -202,6 +202,25 @@ input[type="text"] {
     border-top: 8px solid #0099cd;
 }
 
+.border-right-purple {
+    border-right: 8px solid #6b52a2;
+}
+.border-right-red {
+    border-right: 8px solid #f05346;
+}
+.border-right-green {
+    border-right: 8px solid #79c35a;
+}
+.border-right-blue {
+    border-right: 8px solid #0099cd;
+}
+.border-right-citrus {
+    border-right: 8px solid #ffcc33;
+}
+.border-right-black {
+    border-right: 8px solid #000000;
+}
+
 .panel-il {
     max-width: 300px;
     margin: auto;
@@ -245,4 +264,26 @@ input[type="text"] {
 
 .panel-submit .link {
     padding-top: 10px;
+}
+
+.row-block {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.flexbox {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gray-bg {
+    background-color: #e7e7e8;
+}
+#solar-img {
+    padding: 0 0 0 8px;
+}
+.row-block p {
+    font-size: 16px;
 }

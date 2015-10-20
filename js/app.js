@@ -81,9 +81,10 @@ $(document).ready(function() {
         });
 
         $.ajax({
-            url: "",
+            url: "/reachout_email.php",
             method: "POST",
             error: function(err) {
+                alert(err.status + ":" + err.statusText);
                 $loader.replaceWith($button);
             },
             success: function(data) {
