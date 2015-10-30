@@ -278,6 +278,10 @@ input[type="text"] {
     align-items: center;
 }
 
+.flexbox span {
+    font-size: 26px;
+}
+
 .gray-bg {
     background-color: #e7e7e8;
 }
@@ -291,4 +295,11 @@ input[type="text"] {
 
 .row-block .panel-body {
     border: 0 !important;
+}
+
+/* iphone media query */
+@media (max-width: 450px) {
+    .flexbox span {
+        font-size: 22px;
+    }
 }
