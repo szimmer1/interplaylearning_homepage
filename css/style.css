@@ -262,6 +262,10 @@ input[type="text"] {
     padding-right: 5px;
 }
 
+.panel-submit {
+    padding: 40px 0 0 0;
+}
+
 .panel-submit .link {
     padding-top: 10px;
 }
@@ -300,6 +304,10 @@ input[type="text"] {
 
 .row-block .panel-body {
     border: 0 !important;
+}
+
+.same-height-pricing-box {
+    height: 380px;
 }
 
 /* iphone media query */
