@@ -56,7 +56,7 @@ $(document).ready(function() {
 
         e.target.dataset.valid = isValid ? true : false;
 
-        var A = $('input[type="text"]');
+        var A = $('input[type="text"][data-validation]');
         for (var i = 0; i < A.length; i++) {
             if (A[i].dataset.valid !== 'true') {
                 $('#reachout-submit').prop('disabled', true);
@@ -69,28 +69,25 @@ $(document).ready(function() {
     $('input[type="text"]').on('input', validationHandler);
 
     /* Reach out AJAX */
-    $('#reachout-submit').on('click', function(e) {
-        e.preventDefault();
-
+    $('#reachout-form').submit(function(e) {
         var $loader = $("<img class=\"big-spaced-row\" width=\"40px;\" src=\"img/loader-larger.gif\" />");
         var $button = $(this).replaceWith($loader);
 
-        var data = {};
-        $('#reachout-form').find('input').serializeArray().forEach(function(inputObj) {
-            data[inputObj.name] = inputObj.value;
-        });
-
         $.ajax({
-            url: "/reachout_email.php",
-            method: "POST",
+            url: this.attributes.action.value,
+            method: this.attributes.method.value,
+            data: $(this).serialize(),
             error: function(err) {
-                alert(err.status + ":" + err.statusText);
-                $loader.replaceWith($button);
+                // we treat error as success because Saleforce doesn't allow CORS Ajax requests
+                $loader.replaceWith("<h2 class=\"citrus-color big-spaced-row\">We'll get back to you soon!</h2>");
             },
             success: function(data) {
-                $loader.replaceWith("<h2 class=\"white-color big-spaced-row\">We'll get back to you soon!</h2>");
+                $loader.replaceWith("<h2 class=\"citrus-color big-spaced-row\">We'll get back to you soon!</h2>");
             }
-        })
+        });
+
+        // stop default form action
+        return false;
     })
 
 });
